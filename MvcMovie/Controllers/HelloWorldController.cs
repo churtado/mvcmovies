@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace MvcMovie.Controllers
 {
     public class HelloWorldController : Controller
-    { 
+    {
         //
         // GET: /Helloworld/
 
@@ -21,9 +21,9 @@ namespace MvcMovie.Controllers
         //
         // GET: /Welcome/
 
-        public string Welcome(string name, int numTimes=1)
+        public string Welcome(string name, int ID = 1)
         {
-            return System.Text.Encodings.Web.HtmlEncoder.Default.Encode($"Hello {name}, numtimes is {numTimes}");
+            return System.Text.Encodings.Web.HtmlEncoder.Default.Encode($"Hello {name}, ID: {ID}");
         }
     }
 }
